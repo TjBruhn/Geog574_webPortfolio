@@ -1,0 +1,228 @@
+[
+  {
+    "title": "Holiday Farm Fire Recovery Explorer",
+    "type": "Web-Application",
+    "imageSrc": "images/Holidayfarm.png",
+    "altText": "Holiday Farm Fire Recovery Explorer",
+    "buttons": [
+      {
+        "btnName": "Visit Site",
+        "link": "https://tjbruhn.github.io/holidayfarm_leaflet/",
+        "action": "target='_blank'"
+      },
+      {
+        "btnName": "GitHub",
+        "link": "https://github.com/TjBruhn/holidayfarm_leaflet",
+        "action": "target='_blank'"
+      }
+    ],
+    "description": "<p>Interactive Dashboard map for tracking the rebuild progress of the Holiday Farm Fire. Created as final project for Geography 575 iteractive Cartography.</p>"
+  },
+  {
+    "title": "Precipitation in Oregon",
+    "type": "Interactive Webmap",
+    "imageSrc": "images/precip.png",
+    "altText": "Preciptation in Oregon map",
+    "buttons": [
+      {
+        "btnName": "Visit Site",
+        "link": "https://tjbruhn.github.io/treverbruhn_leaflet_lab/",
+        "action": "target='_blank'"
+      },
+      {
+        "btnName": "GitHub",
+        "link": "https://github.com/TjBruhn/treverbruhn_leaflet_lab",
+        "action": "target='_blank'"
+      }
+    ],
+    "description": "<p>needs fill</p>"
+  },
+  {
+    "title": "Metric Tons of CO2 Emissions",
+    "type": "Interactive Webmap",
+    "imageSrc": "images/C02Emissions.png",
+    "altText": "C02 Emissions map",
+    "buttons": [
+      {
+        "btnName": "Visit Site",
+        "link": "https://tjbruhn.github.io/tjbruhn-d3-coordinated-viz/",
+        "action": "target='_blank'"
+      },
+      {
+        "btnName": "GitHub",
+        "link": "https://github.com/TjBruhn/tjbruhn-d3-coordinated-viz",
+        "action": "target='_blank'"
+      }
+    ],
+    "description": "<p>needs fill</p>"
+  },
+  {
+    "title": "2019 Top 10 Most Deadly",
+    "type": "Infographic",
+    "imageSrc": "images/TreverBruhn_infographic_Thmb.jpg",
+    "altText": "Infographic, most common causes of death 2019",
+    "buttons": [
+      {
+        "btnName": "View PDF",
+        "link": "lib/TreverBruhn_infographic.pdf",
+        "action": "target='_blank'"
+      },
+      {
+        "btnName": "Download png",
+        "link": "lib/Bruhn_infographic.png",
+        "action": "download='infographic'"
+      }
+    ],
+    "description": "<p><strong>Trigger warning:</strong> This project deals with common causes of death in a dark humorous manner. These causes of death are serious and cause a lot of pain, suffering, and grief. This project does not intend to diminish the seriousness or the grief of those affected by these diseases. The intention is to use humor as a means of coping with the fear of death that became so prevalent with the Covid-19 pandemic. If you cope through comedy, take a look, otherwise feel free to skip this one.</p><p>Our challenge was to design an infographic that included bivariate maps. The topic was ours to choose. At the time I was having some Covid woes, and in an attempt to self-sooth and assess my personal risk I decided to indulge in some dark humor centered on the question, “Am I more likely to die of Covid or …?” What emerged was a March Madness-inspired infographic pitting the top 10 causes of death in America against one another for the title of #1 Killer. Of note, this was my first experience using Illustrator. Oh, and all those silly graphics? Yeah, I drew them. They won't win awards, but I am pleased with them.</p><p>The PDF gives a quick look. Downloading the png gives the full experience.</p>"
+  },
+  {
+    "title": "Union Cycliste Iternational - 2024 Eastern Europe",
+    "type": "Cartography",
+    "imageSrc": "images/TjBruhn_Racemap.png",
+    "altText": "Bicycle stage race map",
+    "buttons": [
+      {
+        "btnName": "View PDF",
+        "link": "lib/TjBruhn_Racemap.pdf",
+        "action": "target='_blank'"
+      }
+    ],
+    "description": "<p>This is an overview map of an imaginary bicycle stage race. This project began just as Russia invaded Ukraine. I had the choice of where in the world to set my imaginary race, and I decided I would use the opportunity to learn more about the region.</p><p>I developed the custom shaded relief with custom colored/textured landcover. I was also playing around with flow maps and using lines to communicate direction and magnitude. Finally, I was striving for clean visual hierarchy in an information-dense map.</p>"
+  },
+  {
+    "title": "Site Selection - Recreation Development",
+    "type": "GIS Analysis",
+    "imageSrc": "images/Bruhn_SiteSelectRecDev.png",
+    "altText": "site selection - recreation map",
+    "buttons": [
+      {
+        "btnName": "View PDF",
+        "link": "lib/Bruhn_SiteSelectRecDev.pdf",
+        "action": "target='_blank'"
+      }
+    ],
+    "description": "<p>Does it ever seem like you are surrounded by wild land and yet there are so few trails? This question for Eugene, Oregon prompted this project. Eugene is known as a recreation community, yet there are not a lot of trails close to town. Eugene is a geographic oddity. It is within a 2-hour drive from any landscape one could want! But that means it also is a 2-hour drive to get to anything. Longing for more after-work trails, I set out to identify more areas for trail development close to Eugene. This was my term project for my first GIS course and shows the results of that analysis. At the time I had less than 4 weeks experience in ArcMap. In hindsight, taking on that level of analysis with so little experience was pretty bold. And sadly, no, there have not been any new trails developed as a result of my project. Perhaps it just hasn't landed in the right hands yet?</p>"
+  },
+  {
+    "title": "Site Selection - Songer Dream Cabin",
+    "type": "GIS Analysis",
+    "imageSrc": "images/Bruhn_SiteSelectDreamCabin.png",
+    "altText": "site selection - cabin location map",
+    "buttons": [
+      {
+        "btnName": "View PDF",
+        "link": "lib/Bruhn_SiteSelectDreamCabin.pdf",
+        "action": "target='_blank'"
+      }
+    ],
+    "description": "<p>Who doesn't want a dream cabin in the mountains? This was my second GIS term project where I was challenged to find a location for my instructor's dream cabin. Provided a relatively specific set of must-haves and an interest in figuring out ArcMap's Model Builder, I set after the task of narrowing the possibilities. The model worked beautifully, and I think the sites would be nice too.</p>"
+  },
+  {
+    "title": "SAP Emergency Access",
+    "type": "Data Collection",
+    "imageSrc": "images/Bruhn_SAP_EMS_Access.png",
+    "altText": "Emergency access map",
+    "buttons": [
+      {
+        "btnName": "View PDF",
+        "link": "lib/Bruhn_SAP_EMS_Access.pdf",
+        "action": "target='_blank'"
+      }
+    ],
+    "description": "<p>This map of little-known Suzanne Arlie Park just southwest of Eugene was my third GIS term project and was created for Goshen Fire District. I had just started as an intern at Goshen and the GIS team was in a mad rush to get a wildland EMS access map created for well-known Mt. Pisgah. Goshen mentioned that there were other parks in their district that needed access maps. I needed a term project, so why not? This area is composed of unofficial social trails that no one had mapped for emergency response. I set up an ArcCollector map and set out to collect and categorize all the trails in the area. Visually, I don't love this one. I was directed to make it match the Mt. Pisgah map and this was the symbology that was chosen for it. Despite my dislike for the aesthetic, the firefighters appreciate it and find it very functional. Still I'm itching for a redo…</p>"
+  },
+  {
+    "title": "Dispatch Planning",
+    "type": "GIS Analysis",
+    "imageSrc": "images/Bruhn_PHGFD_Dispatch.png",
+    "altText": "dispatch planning map selection",
+    "buttons": [
+      {
+        "btnName": "District PDF",
+        "link": "lib/Bruhn_PHGFD_Dispatch.pdf",
+        "action": "target='_blank'"
+      },
+      {
+        "btnName": "Series PDF",
+        "link": "lib/Bruhn_PHGFD_dispatchSeries.pdf",
+        "action": "target='_blank'"
+      }
+    ],
+    "description": "<p>Goshen Fire was interested in having their 911 dispatch maps revised to help improve the way units were dispatched to areas in the district based on criteria outlined by the Chief. This turned out to be an extensive project with much analysis and many maps along the way.</p><p>It started with a massive district-wide map, dense with features and designed for a meeting in which the fire chiefs would physically draw out boundaries and areas with unique dispatch needs.</p><p>I was then asked to identify all the areas with addresses within 1000 road feet (including driveways) of a fire hydrant. I built a network dataset, used the network analyst toolset, and  developed a series of hydranted area maps for Chief's approval.</p><p>Having gathered all this input, I went through and recreated the dispatch boundaries. I prepared another large district wide map as well as an indexed map series showing the redrawn dispatch zones.</p>"
+  },
+  {
+    "title": "Heceta Flight Plan",
+    "type": "UAS Flight Planning",
+    "imageSrc": "images/Bruhn_Heceta_Flightplan.png",
+    "altText": "flight plan map",
+    "buttons": [
+      {
+        "btnName": "View PDF",
+        "link": "lib/Bruhn_Heceta_Flightplan.pdf",
+        "action": "target='_blank'"
+      }
+    ],
+    "description": "<p>I was part of a team working with the US Forest Service to produce an orthographic map of the dunes just north of Florence, OR. The map would be used to identify clusters of invasive Scotch Broom for treatment. Navigating coastal dunes can be very disorienting. Five flight teams on simultaneous flights at similar altitudes requires good situational awareness. After receiving the mission brief with a rough sketch on a small-scale map, I created this overview map and a series of larger scale zone maps as georeferenced PDFs. The flight teams used these maps in Avenza Maps to navigate the dunes with increased situational awareness provided by a live track of their position in the mission area.</p>"
+  },
+  {
+    "title": "Amazon Park - Ortho",
+    "type": "UAS Ortho Cartography",
+    "imageSrc": "images/Bruhn_Amazon_Ortho.png",
+    "altText": "amazon park map",
+    "buttons": [
+      {
+        "btnName": "View PDF",
+        "link": "lib/Bruhn_Amazon_Ortho.pdf",
+        "action": "target='_blank'"
+      }
+    ],
+    "description": "<p>What does one do when they get a brand new UAS? Make a map of course! Having just received my brand new Autel Evo II Pro and gone through some test flights it was time to see what this thing could do. I went out to a nearby park, created a flight plan, and set my new tool to do its work. I brought it home and processed the ortho in Agisoft Metashape and was thoroughly pleased with the results.</p><p>Up to this point all my GIS experience was in ArcMap. I decided that, seeing as I was playing with new things, I would also give    ArcPro a go. I loaded up a new project and dropped in the ortho. I created a couple of new feature classes and digitized the fields and the paths. I moved on to the layout and ended up with a passable first foray in ArcPro.</p><p>Do you love those incredibly precise acreage values? Don't worry, I have since learned how to display more meaningful    values. But hey, some flaws are worth keeping to remind us of our progress.</p>"
+  },
+  {
+    "title": "Lane Community College - Ortho",
+    "type": "UAS Ortho",
+    "imageSrc": "images/Bruhn_LCC_Ortho.png",
+    "altText": "orthographic map of lane community college",
+    "buttons": [
+      {
+        "btnName": "View PDF",
+        "link": "lib/Bruhn_LCC_Ortho.pdf",
+        "action": "target='_blank'"
+      }
+    ],
+    "description": "<p>With a ground sample distance of about 1 inch, this orthographic map of Lane Community College has found many uses. A beautiful cloudless day created excellent flight conditions, a well-lit map, and a sunburn on my arms from holding the aircraft controller. I collected these images as the pilot in command with two visual observers. The images were acquired with Autel Evo II Pro aircraft. The ground control points were collected with an Emlid Reach2. I processed the ortho in Pix4d mapper. It serves as a base map for Goshen Fire's preplanning maps of campus, and it has assisted campus planning in several projects. Note: this version is a large PDF with less resolution that the original.</p>"
+  },
+  {
+    "title": "Schools (my first map)",
+    "type": "Cartography",
+    "imageSrc": "images/Bruhn_Schools_1stMap.png",
+    "altText": "map of schools",
+    "buttons": [
+      {
+        "btnName": "View PDF",
+        "link": "lib/Bruhn_Schools_1stMap.pdf",
+        "action": "target='_blank'"
+      }
+    ],
+    "description": "<p>Do you remember your first? A time-honored question we use to reflect on everything that becomes important in our lives. This is my first map using GIS software. It has that iconic ArcMap feel that is nostalgic of the maps you would find in old textbooks. Sigh. Honestly, I am pretty proud of this this one. As first maps go, I think this is a winner.</p>"
+  },
+  {
+    "title": "Proposed Boundaries",
+    "type": "GIS Analysis",
+    "imageSrc": "images/Bruhn_newBoundary_plss_3.22.22.png",
+    "altText": "proposed boundary map",
+    "buttons": [
+      {
+        "btnName": "Townhall PDF",
+        "link": "lib/Bruhn_TownHall_Potential_Newlands.pdf",
+        "action": "target='_blank'"
+      },
+      {
+        "btnName": "Board PDF",
+        "link": "lib/Bruhn_newBoundary_plss_3.22.22.pdf",
+        "action": "target='_blank'"
+      }
+    ],
+    "description": "<p>Just around the boundaries of nearly every fire district in Oregon there are homes that fall outside the district and are therefore not protected in the case of a fire. Goshen Fire asked me to undertake a project to identify such properties in their adjacent areas. I combed through parcel and address data to identify unprotected sites. I explored access and potential response times. I calculated the potential revenue that would result from extending protection to these homes. Once the potential annexation sites were identified I went through a process to draw new proposed boundaries for the district. I drew several iterations of boundaries, each using a different reference layer to snap to. The version that stuck was a combination of PLSS boundaries and parcel boundaries. This large map was prepared for a town hall-style meeting for residents to explore the proposed new boundaries. The small map was designed for the Board of Directors and was accompanied by a series of large scale maps detailing each of the annexation clusters.</p>"
+  }
+]
