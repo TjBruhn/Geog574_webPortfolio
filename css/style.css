@@ -8,6 +8,7 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
 body {
   position: relative;
   color: #343434;

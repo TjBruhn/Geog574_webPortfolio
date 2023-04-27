@@ -1,5 +1,86 @@
 [
   {
+    "title": "Fire Pre-Plan Vizualizer/Collector",
+    "type": "Web-Application",
+    "imageSrc": "images/Bruhn_Preplan.png",
+    "altText": "Fire Pre-Plan Vizualizer",
+    "buttons": [
+      {
+        "btnName": "App",
+        "link": "https://tjbruhn.github.io/wiscpracticum-preplan/",
+        "action": "target='_blank'"
+      },
+      {
+        "btnName": "Demo",
+        "link": "https://youtu.be/RhL3ZzYVeO4 ",
+        "action": "target='_blank'"
+      },
+      {
+        "btnName": "GitHub",
+        "link": "https://github.com/TjBruhn/wiscpracticum-preplan",
+        "action": "target='_blank'"
+      }
+    ],
+    "description": "<p>Web mapping application to create, edit, and view preplans for Pleasant Hill Goshen Fire District. Developed for Geography 778 practicum and Pleasant Hill Goshen Fire District.</p>"
+  },
+  {
+    "title": "Emergency Services Levy",
+    "type": "StoryMap",
+    "imageSrc": "images/Bruhn_StorymapLevy.png",
+    "altText": "Opening page of story map",
+    "buttons": [
+      {
+        "btnName": "Demo",
+        "link": "https://youtu.be/edf9qtTDEUw",
+        "action": "target='_blank'"
+      },
+      {
+        "btnName": "StoryMap",
+        "link": "https://storymaps.arcgis.com/stories/4382c614d90d4d7c8159ccb213f7529b",
+        "action": "target='_blank'"
+      }
+    ],
+    "description": "<p>ArcGIS story map created for Clackamas Fire District to provide background for a proposed levy. I created the storymap, all the map elements, and the animation. </p>"
+  },
+  {
+    "title": "Amazon Park Community Experience",
+    "type": "Web-Application",
+    "imageSrc": "images/Bruhn_AmazonCE.png",
+    "altText": "Amazon Park Community Experience screen shot",
+    "buttons": [
+      {
+        "btnName": "Demo",
+        "link": "https://youtu.be/PLiMABJzMSY",
+        "action": "target='_blank'"
+      },
+      {
+        "btnName": "GitHub",
+        "link": "https://github.com/TjBruhn/amazon-park-map",
+        "action": "target='_blank'"
+      }
+    ],
+    "description": "<p>WebMap application for user submissions for amazon park. Project is built with React and the ArcGIS JavaScript SDK. Created as for Geography 777.</p>"
+  },
+  {
+    "title": "Nitrate Cancer Analysis",
+    "type": "GIS Analysis/Python GUI",
+    "imageSrc": "images/Bruhn_nitrateCancerGui.png",
+    "altText": "Holiday Farm Fire Recovery Explorer",
+    "buttons": [
+      {
+        "btnName": "Demo",
+        "link": "https://youtu.be/pioDA-LW4R8",
+        "action": "target='_blank'"
+      },
+      {
+        "btnName": "GitHub",
+        "link": "https://github.com/TjBruhn/nitrate-cancer-gui",
+        "action": "target='_blank'"
+      }
+    ],
+    "description": "<p>This application provides users a simple Graphical User Interface for exploring the relationship between Cancer rates and Nitrate levels in water across Wisconsin. This application was developed for Geography 777 project #1.The application was built using ArcPy, ArcGIS Pro, and Tkinter with the custom Tkinter library—for a more modern look and feel.</p>"
+  },
+  {
     "title": "Holiday Farm Fire Recovery Explorer",
     "type": "Web-Application",
     "imageSrc": "images/Holidayfarm.png",

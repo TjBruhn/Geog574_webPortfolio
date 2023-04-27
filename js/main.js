@@ -52,7 +52,7 @@ async function populateProjects() {
             ${buttonBlock}
           </div>
         </div>
-      </section>;
+      </section>
       `;
     //add each project to the project list div
     $("#projectList").append(projectSection);
