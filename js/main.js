@@ -5,7 +5,11 @@ async function populateProjects() {
   const response = await fetch(request);
   const projectList = await response.json();
 
+  let projNumber = 0;
+
   projectList.forEach((project) => {
+    //icremet project number
+    ++projNumber;
     let imageSrc = project.imageSrc;
     let altText = project.altText;
     let projTitle = project.title;
@@ -31,9 +35,7 @@ async function populateProjects() {
       );
     });
 
-    console.log(buttonBlock);
-
-    let projectSection = `<section class="project-item">
+    let projectSection = `<section class="project-item ">
         <div class="row">
           <div class="col-md-4 pb-3">
             <div class="d-flex justify-content-center">
@@ -45,8 +47,9 @@ async function populateProjects() {
             </div>
           </div>
           <div class="col">
-            <h3>${projTitle} - ${projType}</h3>
-            <div>
+            <h3>${projTitle}</h3>
+            <h5>${projType}</h5>
+            <div >
               ${projDesc}
             </div>
             ${buttonBlock}
@@ -54,8 +57,10 @@ async function populateProjects() {
         </div>
       </section>
       `;
+
     //add each project to the project list div
-    $("#projectList").append(projectSection);
+    //$("#projectList").append(projectSection);
+    document.getElementById("projectList").innerHTML += projectSection;
   });
 }
 
