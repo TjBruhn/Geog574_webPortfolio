@@ -92,7 +92,7 @@
         "action": "target='_blank'"
       },
       {
-        "btnName": "Visit Site",
+        "btnName": "App",
         "link": "https://tjbruhn.github.io/holidayfarm_leaflet/",
         "action": "target='_blank'"
       },
@@ -111,7 +111,7 @@
     "altText": "Preciptation in Oregon map",
     "buttons": [
       {
-        "btnName": "Visit Site",
+        "btnName": "App",
         "link": "https://tjbruhn.github.io/treverbruhn_leaflet_lab/",
         "action": "target='_blank'"
       },
@@ -130,7 +130,7 @@
     "altText": "C02 Emissions map",
     "buttons": [
       {
-        "btnName": "Visit Site",
+        "btnName": "App",
         "link": "https://tjbruhn.github.io/tjbruhn-d3-coordinated-viz/",
         "action": "target='_blank'"
       },
