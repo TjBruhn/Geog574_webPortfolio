@@ -6,13 +6,13 @@
     "altText": "Fire Pre-Plan Vizualizer",
     "buttons": [
       {
-        "btnName": "App",
-        "link": "https://tjbruhn.github.io/wiscpracticum-preplan/",
+        "btnName": "Demo",
+        "link": "https://youtu.be/RhL3ZzYVeO4 ",
         "action": "target='_blank'"
       },
       {
-        "btnName": "Demo",
-        "link": "https://youtu.be/RhL3ZzYVeO4 ",
+        "btnName": "App",
+        "link": "https://tjbruhn.github.io/wiscpracticum-preplan/",
         "action": "target='_blank'"
       },
       {
@@ -21,7 +21,7 @@
         "action": "target='_blank'"
       }
     ],
-    "description": "<p>Web mapping application to create, edit, and view preplans for Pleasant Hill Goshen Fire District. Developed for Geography 778 practicum and Pleasant Hill Goshen Fire District.</p>"
+    "description": "<p>Fire departments are exploring technologies to improve the collection and use of pre-plans. Pre-plans are an excellent opportunity for mobile geospatial technologies. The ability to serve interactive data and imagery from an interactive web-map is a large advantage over the static pre-plan documents widely used.</p><p>This project is a web-based pre-plan application that allows firefighters to view, add, and edit data in a common interface during collection and use in an incident. The application enables data collection with minimal training, makes collected data immediately available in the pre-plan format, and connects images with their associated attributes. Users can explore the surrounding context of a facility, quickly view pre-plans of neighboring structures, or enlarge images for closer inspection. The app is built specifically for iPad, but responsive across a range of devices. It was built using HTML, CSS, and JavaScript with jQuery and the ArcGIS JavaScript SDK.</p><p>Developed for Geography 778 Practicum and Pleasant Hill Goshen Fire District.</p>"
   },
   {
     "title": "Emergency Services Levy",
@@ -40,7 +40,7 @@
         "action": "target='_blank'"
       }
     ],
-    "description": "<p>ArcGIS story map created for Clackamas Fire District to provide background for a proposed levy. I created the storymap, all the map elements, and the animation. </p>"
+    "description": "<p>This ArcGIS StoryMap was created for Clackamas Fire District to provide background for a proposed levy. I created the StoryMap layout and theme, all the embedded maps, and the animation. This project was a collaborative effort. I wrote much of the content to establish the story flow and then worked with CFD to refine and adapt the content to match their intent more fully. I really enjoyed the collaborative process. </p><p>I really enjoy partnering with organizations to extend their capacity through my technical expertise. This project is a great example of how these partnerships can produce great results. CFD staff are experts in their domain — fire and EMS. They don't need to be experts in GIS. Combining our expertise allows CFD to maintain their focus on having the best fire and EMS experts engaged in their day-to-day challenges while also having GIS expertise at hand when they need it. </p>"
   },
   {
     "title": "Amazon Park Community Experience",
@@ -59,7 +59,7 @@
         "action": "target='_blank'"
       }
     ],
-    "description": "<p>WebMap application for user submissions for amazon park. Project is built with React and the ArcGIS JavaScript SDK. Created as for Geography 777.</p>"
+    "description": "<p>I use Amazon Park nearly every day. I walk, fly UAS, play frisbee, attend classes at the community center, run on trails, rollerblade on paths, watch birds, and listen to frogs. This park is a large part of my life in Eugene and as I watch others, I see it has similar importance to their lives. In the weeks leading up to my Geography 777 final project, I would walk in Amazon and think about which park I wanted to base my app on. One day it struck me that the park I was in was the perfect choice for my project.</p><p>Eugene has a lot of parks and natural areas. Unfortunately, the city struggles to maintain all of them. It is common knowledge that the tax structure in Oregon has left municipalities too lean. I started to imagine that one way to boost the funding for Eugene parks would be through some grant opportunity. Grant applications are stronger when there is a solid human impact narrative. I came up with the idea to create an app that would allow citizens to share how they use the park and why they love it. I wanted a simple app that could be focused on the park users and their experiences in the park.</p><p>In today's development world, you cannot talk about interactivity in web applications without hearing “React”. With user interactivity in mind, I decided to take advantage of React as the front-end framework. For the back-end, I chose to use ESRI's ArcGIS JavaScript SDK (SDK) with data housed in ArcGIS online (AGOL). All the source data for Amazon was available from the city through AGOL. I also knew that the app would need to store images and AGOL feature layer attachments provide a convenient image server solution. Imagining the city as the client for this application combined with the image solution made AGOL logical choice.</p>"
   },
   {
     "title": "Nitrate Cancer Analysis",
@@ -78,7 +78,7 @@
         "action": "target='_blank'"
       }
     ],
-    "description": "<p>This application provides users a simple Graphical User Interface for exploring the relationship between Cancer rates and Nitrate levels in water across Wisconsin. This application was developed for Geography 777 project #1.The application was built using ArcPy, ArcGIS Pro, and Tkinter with the custom Tkinter library—for a more modern look and feel.</p>"
+    "description": "<p>This application provides users a simple Graphical User Interface for exploring the relationship between Cancer rates and Nitrate levels in water across Wisconsin. This application was developed for Geography 777 project #1.</p><p>This project imagined an analysis scenario in which the Wisconsin Department of Natural Resources (WDNR) was interested in investigating the relationship between the nitrate levels in water around the state and the occurrence of cancer. The deliverables included an interactive tool that would allow WDNR users to adjust the distance decay parameter used in the analysis and return a residuals map.</p><p>This project was accomplished with a combination of ArcGIS Pro (ArcPro), ArcPy, and the Python Tkinter GUI library with the CustomTkinter library—for a more modern look and feel. I set the project up in ArcPro where I built the various map layouts and worked out the geoprocessing model. I converted the geoprocessing model into a python script. I wrote a second script to export layouts from ArcPro after geoprocessing. Then I created the GUI application using Tkinter/CustomTkinter to get a modern app. The app allows the user to set the geoprocessing parameters, runs the various scripts, and displays a map with the results. </p><p>I spent a lot of time on the UI/UX on this project and am pleased with how it turned out. I think I will allow my instructors grading comments to close this one out: </p><p><em>“Excellent work Trever! I rarely give out 100%'s and this is one of the best python apps for project 1 to date. You've gone above and beyond in multiple aspects. The app's layout is nicely balanced — packed with content but doesn't feel overcrowded. You've certainly created the app with the user in mind from the about information to the feedback on input and running of the app. The output maps are styled well and include more than the necessary map elements.”</em></p>"
   },
   {
     "title": "Holiday Farm Fire Recovery Explorer",
@@ -86,6 +86,11 @@
     "imageSrc": "images/Holidayfarm.png",
     "altText": "Holiday Farm Fire Recovery Explorer",
     "buttons": [
+      {
+        "btnName": "Demo",
+        "link": "https://youtu.be/cVvt3HIskJA",
+        "action": "target='_blank'"
+      },
       {
         "btnName": "Visit Site",
         "link": "https://tjbruhn.github.io/holidayfarm_leaflet/",
@@ -97,7 +102,7 @@
         "action": "target='_blank'"
       }
     ],
-    "description": "<p>Interactive Dashboard map for tracking the rebuild progress of the Holiday Farm Fire. Created as final project for Geography 575 iteractive Cartography.</p>"
+    "description": "<p>The summer of 2020 was unique in western Oregon. Until Labor Day weekend, the summer and fire season had been mild. Labor Day weekend was hot and dry. Strong winds the night of Monday, September 7th took a mild fire season and turned it into one of the most destructive fire seasons in Oregon's history. Across the state several major fires erupted, and driven by high winds, consumed entire communities in a matter of hours. In the wake of these fires, City and County planning departments have been overwhelmed in their efforts to manage rebuilding. </p><p>The Holiday Farm Fire began just outside of the Holiday Farm RV Park in the McKenzie River valley. Uncharacteristic down-canyon winds roared, driving the fire miles in minutes. Two towns were burned to foundations and the evacuation was harrowing. The fires burned for only a short time, but the destruction was extensive. Shortly after the fire the cleanup began, and along with it talk of rebuilding. </p><p>Lane County launched a long-term recovery task force and hired a permit navigator dedicated to the recovery and rebuild after the Holiday Farm Fire. Lane County's GIS team created data layers and a basic webmap that allows these staff and the public to monitor the rebuild progress. </p><p>This application tapped into these publicly available data and created an interactive dashboard. The dashboard displays summary statistics for the extent in the viewport. Users may access information about a given parcel's, rebuild progress, sale status, and original damage assessment. </p><p>I built this one for Geography 575, Interactive Cartography but shared it with the folks on the long-term recovery task force for their use in helping this community recover. The dashboard was built using Esri Leaflet, JavaScript, and CSS.</p>"
   },
   {
     "title": "Precipitation in Oregon",
@@ -116,7 +121,7 @@
         "action": "target='_blank'"
       }
     ],
-    "description": "<p>needs fill</p>"
+    "description": "<p>Having moved relatively recently to Oregon I was trying to wrap my head around what was normal precipitation — or in other words, when will it stop raining? What better way to understand what was normal than to build an app to look at the precipitation data from one year to the next?</p><p>This app allows users to explore precipitation in Oregon over time. This was the first project in Geography 575, Interactive Cartography. The project goal was to create a web-based spatiotemporal visualization that 'makes visible' some regional geographic phenomenon and process. We were learning about user interaction and data visualization with proportional symbols. At the same time, we were learning to program in JavaScript.</p><p>This is my first JavaScript project. As first web projects go, I think it turned out pretty well. I had fun with the SVG raindrop in the legend and creating the silly raindrop background in Adobe Illustrator.</p>"
   },
   {
     "title": "Metric Tons of CO2 Emissions",
@@ -135,7 +140,7 @@
         "action": "target='_blank'"
       }
     ],
-    "description": "<p>needs fill</p>"
+    "description": "<p>This app gives users the opportunity to explore C02 emissions by state and source. It is a highly animated application that coordinates the user interaction between the map and chart. Users always know if they are over something interactive because everything moves. Okay so it's not very subtle, and arguably over wrought, but as an exercise in what is possible for providing interactive feedback it was a really good experience. </p><p>This was the second project in Geography 575, Interactive Cartography. The project goal was to design a highly interactive and coordinated geovisualization application. We were deep into UI/UX design theory and learning how to create interactive elements in web projects. We dove into the D3 library to learn data visualization and mapping with SVGs.</p><p>I had a lot of fun with this one. I am particularly proud of the bivariate symbology. Visit the app and click “Overlay Population” and enjoy the transformation.</p>"
   },
   {
     "title": "2019 Top 10 Most Deadly",
@@ -149,7 +154,7 @@
         "action": "target='_blank'"
       },
       {
-        "btnName": "Download png",
+        "btnName": "Get png",
         "link": "lib/Bruhn_infographic.png",
         "action": "download='infographic'"
       }

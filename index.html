@@ -13,15 +13,18 @@
       href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&family=Montserrat:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <!-- old bootstrap -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
 
-    <!-- New Bootstrap -->
+    <!-- Bootstrap 5 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
+    />
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
 
     <link rel="stylesheet" href="css/style.css" />
@@ -32,7 +35,7 @@
     data-bs-target="#toggleNav"
     data-bs-root-margin="0px 0px 0%"
   >
-    <!-- ***********************  Navigation bar  *********************** -->
+    <!-- ***  Navigation bar  *********************** -->
     <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
       <div class="container">
         <a href="#" class="navbar-brand">Trever Bruhn</a>
@@ -61,7 +64,7 @@
       <!--container-->
     </nav>
 
-    <!-- ***********************  ABOUT / PROFILE  *********************** -->
+    <!-- ***  ABOUT / PROFILE  *********************** -->
     <header>
       <div class="container py-5 mt-5" id="About">
         <h1>Trever Bruhn</h1>
@@ -108,16 +111,18 @@
       </div>
     </header>
 
-    <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
+    <!-- ***  PROJECTS  ********************* -->
     <section class="projects" id="Projects">
       <div class="container py-5 divider">
         <h2>Featured Projects</h2>
+        <hr />
+
         <div class="divider" id="projectList"></div>
         <!-- End of Project block. -->
       </div>
     </section>
 
-    <!-- ***********************  WORK EXPERIENCE  *********************** -->
+    <!-- ***  WORK EXPERIENCE  *********************** -->
     <section class="work-exp" id="Work">
       <div class="container py-5 item-details divider">
         <h2>Work Experience</h2>
@@ -125,6 +130,40 @@
           Equipped with a diversity of professional experience I am well
           positioned to be an effective member of any project.
         </p>
+        <hr />
+
+        <!--Job-->
+        <section class="job-item">
+          <div class="row">
+            <div class="col-lg-4 pb-3">
+              <div class="job-details">
+                <h3>GIS Developer and UAS Pilot</h3>
+                <p>Trever Bruhn Geospatial Contracting</p>
+                <p>Eugene, OR</p>
+                <p>04/2022 - Present</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="job-summary">
+                <ul>
+                  <li>
+                    Process geospatial information using an assortment of
+                    methods and tools in ArcGIS Pro
+                  </li>
+                  <li>
+                    Create and edit interactive web maps, apps, dashboards, and
+                    Storymaps
+                  </li>
+                  <li>Design cartographic products for print and web</li>
+                  <li>
+                    Write Python scripts for geoprocessing and workflow
+                    automation
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <!--Job1-->
         <section class="job-item">
@@ -141,8 +180,8 @@
               <div class="job-summary">
                 <ul>
                   <li>
-                    Create web based interactive preplan map using ArcGIS API
-                    for JavaScript, CSS, HTML5, & jQuery
+                    Create web-based maps using ArcGIS JavaScript SDK, CSS,
+                    HTML5, & jQuery
                   </li>
                   <li>
                     Write python scripts to process/compile data and perform
@@ -332,16 +371,17 @@
           </div>
         </section>
         <!-- End of Job block. -->
-        <a class="btn" href="lib/TJBruhn_resumeShort04.2022.pdf" target="_blank"
+        <a class="btn" href="lib/TJBruhn_resume_02.22.2023.pdf" target="_blank"
           >Download Resume</a
         >
       </div>
     </section>
 
-    <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
+    <!-- ***  EDUCATION & CERTIFICATIONS ****************** -->
     <section class="education" id="Education">
       <div class="container py-5 item-details">
         <h2>Education</h2>
+        <hr />
 
         <!-- school 1 -->
         <section>
@@ -398,18 +438,11 @@
       </div>
     </section>
 
-    <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+    <!-- ***  CONTACT INFO / SOCIAL MEDIA  ***************** -->
     <footer>
       <div class="container py-5" id="Contact">
         <h2>Contact Me</h2>
 
-        <!-- Social media and contact links. -->
-        <!--
-				<ul class="contact-list">
-					<li><a href="mailto:treverbruhn@yahoo.com">treverbruhn@yahoo.com</a></li>
-					<li><a href="http://www.linkedin.com/in/trever-bruhn" target="_blank">LinkedIn</a></li>
-				</ul>
--->
         <div class="row">
           <div class="col">
             <a class="px-3" href="mailto:treverbruhn@yahoo.com">Email</a>
@@ -427,12 +460,9 @@
       </div>
     </footer>
 
-    <!-- <script src="js/jquery-3.6.0.min.js"></script> -->
-    <!--need for collapse navigation menu-->
-    <!-- Old Bootstrap -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <!-- ***SCRIPT BLOCK*** -->
 
-    <!-- New Bootstrap -->
+    <!-- Bootstrap 5 -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -443,7 +473,8 @@
       integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
       crossorigin="anonymous"
     ></script>
-    <!--need for collapse navigation menu-->
+
     <script src="js/main.js"></script>
+    <!-- ***END SCRIPT BLOCK*** -->
   </body>
 </html>
