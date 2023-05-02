@@ -1,3 +1,21 @@
+let projectList;
+let projectListCopy;
+
+async function getProjList() {
+  // Get the project list from the JSON file
+  const requestURL = "js/projects.json";
+  const request = new Request(requestURL);
+
+  const response = await fetch(request);
+  // Set the project list to the response
+  projectList = await response.json();
+}
+
+function makeListCopy() {
+  // Create shallow copy of the project list that can be modified without affecting the original
+  projectListCopy = projectList.slice();
+}
+
 function toggleDiv(divId, moreId, imgId) {
   /*
   Handles the show and hide for each project. 
@@ -41,16 +59,41 @@ function toggleDiv(divId, moreId, imgId) {
   }
 }
 
-async function populateProjects() {
-  const requestURL = "js/projects.json";
-  const request = new Request(requestURL);
+// Function to pull projects from the list equal to the number requested by howMany
+function getRandomItems(list, howMany) {
+  let randomItems = [];
+  let listLength = list.length;
 
-  const response = await fetch(request);
-  const projectList = await response.json();
+  if (howMany > listLength && listLength > 0) {
+    // Reduce the number of items requested to the length of the list
+    howMany = listLength;
+  } else if (listLength == 0) {
+    // If the list is empty repopulate the list with the original list
+    makeListCopy();
+    list = projectListCopy;
+    listLength = list.length;
+  }
 
+  for (let i = 0; i < howMany; i++) {
+    let randomIndex = Math.floor(Math.random() * listLength);
+    randomItems.push(list[randomIndex]);
+    list.splice(randomIndex, 1);
+    listLength--;
+  }
+  return randomItems;
+}
+
+// iterate over the project list and create HTML for each project
+function writeProjHtml(list) {
+  const projListDiv = document.getElementById("projectList");
+
+  // Clear the project list div
+  projListDiv.innerHTML = "";
+  // Initialize a project counter
   let projNumber = 0;
 
-  projectList.forEach((project) => {
+  // Iterate over the list of projects
+  list.forEach((project) => {
     // Increment project number
     ++projNumber;
     let imageSrc = project.imageSrc;
@@ -109,13 +152,32 @@ async function populateProjects() {
       `;
 
     // Add each project to the project list div
-    document.getElementById("projectList").innerHTML += projectSection;
+    projListDiv.innerHTML += projectSection;
   });
+}
+
+// Iterate over project list, create HTML for each project, and append it to the project list
+function populateProjects(howMany = null, type = "all") {
+  // Get a random number of projects to display
+  if (howMany != null) {
+    let randomProjects = getRandomItems(projectListCopy, howMany);
+    writeProjHtml(randomProjects);
+  } else if (howMany == null && type == "all") {
+    writeProjHtml(projectList);
+    // Refresh the projectListCopy
+    makeListCopy();
+  }
+  // TODO: Add a type filter
 }
 
 window.onload = function () {
   // This code will run when the document has finished loading.
-  populateProjects();
+  getProjList().then(() => {
+    // Create shallow copy of the project list that can be modified without affecting the original
+    makeListCopy();
+    // Populate the projects div with an initial 5 random projects
+    populateProjects((howMany = 5));
+  });
 };
 
 // Force the nav menu to collapse when an link is selected

@@ -29,6 +29,9 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <title>Trever Bruhn</title>
+
+    <!-- fav icon currently blank to eliminate error  -->
+    <link rel="icon" href="#" type="image/x-icon" />
   </head>
   <body
     data-bs-spy="scroll"
@@ -115,6 +118,10 @@
     <section class="projects" id="Projects">
       <div class="container py-5 divider">
         <h2>Featured Projects</h2>
+        <button class="btn" onclick="populateProjects((howMany = 5))">
+          Random Five
+        </button>
+        <button class="btn" onclick="populateProjects()">All</button>
         <hr />
 
         <div class="divider" id="projectList"></div>
