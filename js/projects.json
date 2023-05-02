@@ -2,6 +2,10 @@
   {
     "title": "Fire Pre-Plan Vizualizer/Collector",
     "type": "Web-Application",
+    "category": [
+      "programming",
+      "esri"
+    ],
     "imageSrc": "images/Bruhn_Preplan.png",
     "altText": "Fire Pre-Plan Vizualizer",
     "buttons": [
@@ -26,6 +30,9 @@
   {
     "title": "Emergency Services Levy",
     "type": "StoryMap",
+    "category": [
+      "esri"
+    ],
     "imageSrc": "images/Bruhn_StorymapLevy.png",
     "altText": "Opening page of story map",
     "buttons": [
@@ -45,6 +52,10 @@
   {
     "title": "Amazon Park Community Experience",
     "type": "Web-Application",
+    "category": [
+      "programming",
+      "esri"
+    ],
     "imageSrc": "images/Bruhn_AmazonCE.png",
     "altText": "Amazon Park Community Experience screen shot",
     "buttons": [
@@ -64,6 +75,9 @@
   {
     "title": "Nitrate Cancer Analysis",
     "type": "GIS Analysis/Python GUI",
+    "category": [
+      "programming"
+    ],
     "imageSrc": "images/Bruhn_nitrateCancerGui.png",
     "altText": "Holiday Farm Fire Recovery Explorer",
     "buttons": [
@@ -83,6 +97,10 @@
   {
     "title": "Holiday Farm Fire Recovery Explorer",
     "type": "Web-Application",
+    "category": [
+      "programming",
+      "esri"
+    ],
     "imageSrc": "images/Holidayfarm.png",
     "altText": "Holiday Farm Fire Recovery Explorer",
     "buttons": [
@@ -107,6 +125,10 @@
   {
     "title": "Precipitation in Oregon",
     "type": "Interactive Webmap",
+    "category": [
+      "programming",
+      "cartography"
+    ],
     "imageSrc": "images/precip.png",
     "altText": "Preciptation in Oregon map",
     "buttons": [
@@ -126,6 +148,10 @@
   {
     "title": "Metric Tons of CO2 Emissions",
     "type": "Interactive Webmap",
+    "category": [
+      "programming",
+      "cartography"
+    ],
     "imageSrc": "images/C02Emissions.png",
     "altText": "C02 Emissions map",
     "buttons": [
@@ -145,6 +171,9 @@
   {
     "title": "2019 Top 10 Most Deadly",
     "type": "Infographic",
+    "category": [
+      "cartography"
+    ],
     "imageSrc": "images/TreverBruhn_infographic_Thmb.jpg",
     "altText": "Infographic, most common causes of death 2019",
     "buttons": [
@@ -164,6 +193,10 @@
   {
     "title": "Union Cycliste Iternational - 2024 Eastern Europe",
     "type": "Cartography",
+    "category": [
+      "cartography",
+      "esri"
+    ],
     "imageSrc": "images/TjBruhn_Racemap.png",
     "altText": "Bicycle stage race map",
     "buttons": [
@@ -178,6 +211,11 @@
   {
     "title": "Site Selection - Recreation Development",
     "type": "GIS Analysis",
+    "category": [
+      "analysis",
+      "esri",
+      "cartography"
+    ],
     "imageSrc": "images/Bruhn_SiteSelectRecDev.png",
     "altText": "site selection - recreation map",
     "buttons": [
@@ -192,6 +230,11 @@
   {
     "title": "Site Selection - Songer Dream Cabin",
     "type": "GIS Analysis",
+    "category": [
+      "analysis",
+      "esri",
+      "cartography"
+    ],
     "imageSrc": "images/Bruhn_SiteSelectDreamCabin.png",
     "altText": "site selection - cabin location map",
     "buttons": [
@@ -206,6 +249,9 @@
   {
     "title": "SAP Emergency Access",
     "type": "Data Collection",
+    "category": [
+      "esri"
+    ],
     "imageSrc": "images/Bruhn_SAP_EMS_Access.png",
     "altText": "Emergency access map",
     "buttons": [
@@ -220,6 +266,11 @@
   {
     "title": "Dispatch Planning",
     "type": "GIS Analysis",
+    "category": [
+      "analysis",
+      "esri",
+      "cartography"
+    ],
     "imageSrc": "images/Bruhn_PHGFD_Dispatch.png",
     "altText": "dispatch planning map selection",
     "buttons": [
@@ -239,6 +290,10 @@
   {
     "title": "Heceta Flight Plan",
     "type": "UAS Flight Planning",
+    "category": [
+      "uas",
+      "esri"
+    ],
     "imageSrc": "images/Bruhn_Heceta_Flightplan.png",
     "altText": "flight plan map",
     "buttons": [
@@ -253,6 +308,11 @@
   {
     "title": "Amazon Park - Ortho",
     "type": "UAS Ortho Cartography",
+    "category": [
+      "uas",
+      "esri",
+      "cartography"
+    ],
     "imageSrc": "images/Bruhn_Amazon_Ortho.png",
     "altText": "amazon park map",
     "buttons": [
@@ -267,6 +327,9 @@
   {
     "title": "Lane Community College - Ortho",
     "type": "UAS Ortho",
+    "category": [
+      "uas"
+    ],
     "imageSrc": "images/Bruhn_LCC_Ortho.png",
     "altText": "orthographic map of lane community college",
     "buttons": [
@@ -281,6 +344,10 @@
   {
     "title": "Schools (my first map)",
     "type": "Cartography",
+    "category": [
+      "esri",
+      "cartography"
+    ],
     "imageSrc": "images/Bruhn_Schools_1stMap.png",
     "altText": "map of schools",
     "buttons": [
@@ -295,6 +362,11 @@
   {
     "title": "Proposed Boundaries",
     "type": "GIS Analysis",
+    "category": [
+      "analysis",
+      "esri",
+      "cartography"
+    ],
     "imageSrc": "images/Bruhn_newBoundary_plss_3.22.22.png",
     "altText": "proposed boundary map",
     "buttons": [

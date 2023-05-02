@@ -58,9 +58,36 @@ h3 {
   border-bottom: none;
 }
 
-.btn {
+/* .btn-primary {
   color: #f7fff7;
   background: #2f3061;
+} */
+/* Custom button styles */
+.btn-primary {
+  background-color: #2f3061;
+  border-color: #2f3061;
+}
+
+.btn-primary:hover {
+  background-color: #f7fff7;
+  border-color: #2f3061;
+  color: #2f3061;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  background-color: #f7fff7;
+  border-color: #2f3061;
+  color: #2f3061;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #f7fff7;
+  border-color: #2f3061;
+  color: #2f3061;
 }
 
 /* eliminates the focus border that does behaves oddly */

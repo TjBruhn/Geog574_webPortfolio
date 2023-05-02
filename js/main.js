@@ -114,7 +114,7 @@ function writeProjHtml(list) {
 
       buttonBlock = buttonBlock.concat(
         `<a
-          class="btn"
+          class="btn btn-primary"
           href="${buttonLink}"
           ${buttonAction}
         >
@@ -157,17 +157,39 @@ function writeProjHtml(list) {
 }
 
 // Iterate over project list, create HTML for each project, and append it to the project list
-function populateProjects(howMany = null, type = "all") {
-  // Get a random number of projects to display
+function populateProjects(howMany = null, category = "All") {
+  // Get projShowing header
+  let projShowing = document.getElementById("projShowing");
+
+  // Populate projects by howMany or category
   if (howMany != null) {
     let randomProjects = getRandomItems(projectListCopy, howMany);
+    // Populate the projects div with the random projects
     writeProjHtml(randomProjects);
-  } else if (howMany == null && type == "all") {
-    writeProjHtml(projectList);
+    // Write the number of projects to the projShowing header
+    projShowing.innerHTML = `Showing: Random ${howMany}`;
+  } else if (howMany == null) {
+    // Write the category to the projShowing header
+    projShowing.innerHTML = `Showing: ${category}`;
     // Refresh the projectListCopy
     makeListCopy();
+
+    switch (category) {
+      case "All":
+        // Populate the projects div with all projects
+        writeProjHtml(projectList);
+
+        break;
+      default:
+        let categoryProjects = projectList.filter((project) => {
+          // regardless of case, return true if the category matches
+          return project.category?.includes(category.toLowerCase());
+        });
+        // Populate the projects div with the category projects list
+        writeProjHtml(categoryProjects);
+        break;
+    }
   }
-  // TODO: Add a type filter
 }
 
 window.onload = function () {

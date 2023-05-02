@@ -118,10 +118,101 @@
     <section class="projects" id="Projects">
       <div class="container py-5 divider">
         <h2>Featured Projects</h2>
-        <button class="btn" onclick="populateProjects((howMany = 5))">
-          Random Five
-        </button>
-        <button class="btn" onclick="populateProjects()">All</button>
+        <h5 id="projShowing"></h5>
+        <br />
+        <div
+          class="btn-group"
+          role="group"
+          aria-label="Button group with nested dropdown"
+        >
+          <button class="btn btn-primary" onclick="populateProjects()">
+            All
+          </button>
+          <div class="btn-group" role="group">
+            <button
+              id="btnGroupDrop1"
+              type="button"
+              class="btn btn-primary dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Random
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <li>
+                <a
+                  class="dropdown-item"
+                  onclick="populateProjects((howMany = 1))"
+                  >Random 1</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  onclick="populateProjects((howMany = 3))"
+                  >Random 3</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  onclick="populateProjects((howMany = 5))"
+                  >Random 5</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="btn-group" role="group">
+            <button
+              id="btnGroupDrop1"
+              type="button"
+              class="btn btn-primary dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Category
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <li>
+                <a
+                  class="dropdown-item"
+                  onclick="populateProjects(undefined, (category = 'Programming'))"
+                  >Programming</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  onclick="populateProjects(undefined, (category = 'Analysis'))"
+                  >Analysis</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  onclick="populateProjects(undefined, (category = 'Cartography'))"
+                  >Cartography</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  onclick="populateProjects(undefined, (category = 'UAS'))"
+                  >UAS</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  onclick="populateProjects(undefined, (category = 'ESRI'))"
+                  >ESRI Products</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <hr />
 
         <div class="divider" id="projectList"></div>
