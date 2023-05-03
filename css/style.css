@@ -23,7 +23,8 @@ img {
   width: 300px;
 }
 a {
-  color: #ffe66d;
+  /* color: #ffe66d; */
+  color: none;
 }
 a:hover {
   text-decoration: none;
@@ -58,10 +59,11 @@ h3 {
   border-bottom: none;
 }
 
-/* .btn-primary {
-  color: #f7fff7;
-  background: #2f3061;
-} */
+.techIcon {
+  height: 2rem;
+  width: 2rem;
+}
+
 /* Custom button styles */
 .btn-primary {
   background-color: #2f3061;
@@ -90,7 +92,7 @@ h3 {
   color: #2f3061;
 }
 
-/* eliminates the focus border that does behaves oddly */
+/* eliminates the focus border */
 .navbar-toggler:focus {
   box-shadow: none;
 }
@@ -116,6 +118,7 @@ header h2 {
 header h2 {
   margin-bottom: 16px;
 }
+
 /*Projects 
 _____________________________________*/
 .projects {
@@ -179,4 +182,8 @@ footer {
   background: #343434;
   color: #f7fff7;
   text-align: center;
+}
+
+#Contact h2 {
+  padding-bottom: 1rem;
 }
