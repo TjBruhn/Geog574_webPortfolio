@@ -31,7 +31,7 @@
     <title>Trever Bruhn</title>
 
     <!-- fav icon currently blank to eliminate error  -->
-    <link rel="icon" href="#" type="image/x-icon" />
+    <link rel="icon" href="lib\favIconSvg.svg" type="image/svg+xml" />
   </head>
   <body
     data-bs-spy="scroll"
@@ -142,21 +142,21 @@
               <li>
                 <a
                   class="dropdown-item"
-                  onclick="populateProjects((howMany = 1))"
+                  onclick="populateProjects(1, undefined)"
                   >Random 1</a
                 >
               </li>
               <li>
                 <a
                   class="dropdown-item"
-                  onclick="populateProjects((howMany = 3))"
+                  onclick="populateProjects(3, undefined)"
                   >Random 3</a
                 >
               </li>
               <li>
                 <a
                   class="dropdown-item"
-                  onclick="populateProjects((howMany = 5))"
+                  onclick="populateProjects(5, undefined)"
                   >Random 5</a
                 >
               </li>
@@ -177,44 +177,43 @@
               <li>
                 <a
                   class="dropdown-item"
-                  onclick="populateProjects(undefined, (category = 'Programming'))"
+                  onclick="populateProjects(undefined, 'Programming')"
                   >Programming</a
                 >
               </li>
               <li>
                 <a
                   class="dropdown-item"
-                  onclick="populateProjects(undefined, (category = 'Analysis'))"
+                  onclick="populateProjects(undefined, 'Analysis')"
                   >Analysis</a
                 >
               </li>
               <li>
                 <a
                   class="dropdown-item"
-                  onclick="populateProjects(undefined, (category = 'Cartography'))"
+                  onclick="populateProjects(undefined,  'Cartography')"
                   >Cartography</a
                 >
               </li>
               <li>
                 <a
                   class="dropdown-item"
-                  onclick="populateProjects(undefined, (category = 'UAS'))"
+                  onclick="populateProjects(undefined,  'UAS')"
                   >UAS</a
                 >
               </li>
               <li>
                 <a
                   class="dropdown-item"
-                  onclick="populateProjects(undefined, (category = 'ESRI'))"
+                  onclick="populateProjects(undefined,  'ESRI')"
                   >ESRI Products</a
                 >
               </li>
             </ul>
           </div>
         </div>
-
         <hr />
-
+        <!-- Container to which projects are appended  -->
         <div class="divider" id="projectList"></div>
         <!-- End of Project block. -->
       </div>
