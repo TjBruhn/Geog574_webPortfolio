@@ -1,11 +1,29 @@
+let projectList;
+let projectListCopy;
+
+async function getProjList() {
+  // Get the project list from the JSON file
+  const requestURL = "js/projects.json";
+  const request = new Request(requestURL);
+  const response = await fetch(request);
+
+  // Set the project list to the response
+  projectList = await response.json();
+}
+
+function makeListCopy() {
+  // Create shallow copy of the project list that can be modified without affecting the original
+  projectListCopy = projectList.slice();
+}
+
 function toggleDiv(divId, moreId, imgId) {
   /*
   Handles the show and hide for each project. 
   Toggles the classes on th project description div, the image div, and the more div (which serves as the expand and contract button and the partial cover of the description text). The args are the ids of the target divs.      
   */
-  var div = document.getElementById(divId);
-  var more = document.getElementById(moreId);
-  var img = document.getElementById(imgId);
+  const div = document.getElementById(divId);
+  const more = document.getElementById(moreId);
+  const img = document.getElementById(imgId);
 
   // Get the Icon element of the more div
   const moreIcon = more.querySelector("i");
@@ -41,37 +59,62 @@ function toggleDiv(divId, moreId, imgId) {
   }
 }
 
-async function populateProjects() {
-  const requestURL = "js/projects.json";
-  const request = new Request(requestURL);
+// Function to pull projects from the list equal to the number requested by howMany
+function getRandomItems(list, howMany) {
+  let randomItems = [];
+  let listLength = list.length;
 
-  const response = await fetch(request);
-  const projectList = await response.json();
+  if (howMany > listLength && listLength > 0) {
+    // Reduce the number of items requested to the length of the list
+    howMany = listLength;
+  } else if (listLength == 0) {
+    // If the list is empty repopulate the list with the original list
+    makeListCopy();
+    list = projectListCopy;
+    listLength = list.length;
+  }
 
+  for (let i = 0; i < howMany; i++) {
+    let randomIndex = Math.floor(Math.random() * listLength);
+    randomItems.push(list[randomIndex]);
+    list.splice(randomIndex, 1);
+    listLength--;
+  }
+  return randomItems;
+}
+
+// iterate over the project list and create HTML for each project
+function writeProjHtml(list) {
+  const projListDiv = document.getElementById("projectList");
+
+  // Clear the project list div
+  projListDiv.innerHTML = "";
+  // Initialize a project counter
   let projNumber = 0;
 
-  projectList.forEach((project) => {
+  // Iterate over the list of projects
+  list.forEach((project) => {
     // Increment project number
     ++projNumber;
-    let imageSrc = project.imageSrc;
-    let altText = project.altText;
-    let projTitle = project.title;
-    let projType = project.type;
-    let projDesc = project.description;
-    let buttonList = project.buttons;
-    let descDivId = "projNum" + projNumber;
-    let descMoreId = descDivId + "_more";
-    let imgDivId = descDivId + "_img";
+    const imageSrc = project.imageSrc;
+    const altText = project.altText;
+    const projTitle = project.title;
+    const projType = project.type;
+    const projDesc = project.description;
+    const buttonList = project.buttons;
+    const descDivId = "projNum" + projNumber;
+    const descMoreId = descDivId + "_more";
+    const imgDivId = descDivId + "_img";
     let buttonBlock = "";
 
     buttonList.forEach((button) => {
-      let buttonName = button.btnName;
-      let buttonLink = button.link;
-      let buttonAction = button.action;
+      const buttonName = button.btnName;
+      const buttonLink = button.link;
+      const buttonAction = button.action;
 
       buttonBlock = buttonBlock.concat(
         `<a
-          class="btn"
+          class="btn btn-primary"
           href="${buttonLink}"
           ${buttonAction}
         >
@@ -80,7 +123,7 @@ async function populateProjects() {
       );
     });
 
-    let projectSection = `
+    const projectSection = `
     <!-- Project: ${projTitle} --> 
     <section class="project-item ">
         <div class="row">
@@ -102,26 +145,67 @@ async function populateProjects() {
               ${projDesc}
             </div>
             <div class="proj-desc-more proj-desc-less" id="${descMoreId}" onclick="toggleDiv('${descDivId}', this.id, '${imgDivId}')"><i class="bi bi-chevron-double-down" style="font-size: 1.5rem;"></i></div>            
-            ${buttonBlock}
+            ${buttonBlock}           
           </div>
         </div>
       </section>
       `;
 
     // Add each project to the project list div
-    document.getElementById("projectList").innerHTML += projectSection;
+    projListDiv.innerHTML += projectSection;
   });
+}
+
+// Iterate over project list, create HTML for each project, and append it to the project list
+function populateProjects(howMany = null, category = "All") {
+  // Get projShowing header
+  const projShowing = document.getElementById("projShowing");
+
+  // Populate projects by howMany or category
+  if (howMany != null) {
+    const randomProjects = getRandomItems(projectListCopy, howMany);
+    // Populate the projects div with the random projects
+    writeProjHtml(randomProjects);
+    // Write the number of projects to the projShowing header
+    projShowing.innerHTML = `Showing: Random ${howMany}`;
+  } else if (howMany == null) {
+    // Write the category to the projShowing header
+    projShowing.innerHTML = `Showing: ${category}`;
+    // Refresh the projectListCopy
+    makeListCopy();
+
+    switch (category) {
+      case "All":
+        // Populate the projects div with all projects
+        writeProjHtml(projectList);
+
+        break;
+      default:
+        const categoryProjects = projectList.filter((project) => {
+          // regardless of case, return true if the category matches
+          return project.category?.includes(category.toLowerCase());
+        });
+        // Populate the projects div with the category projects list
+        writeProjHtml(categoryProjects);
+        break;
+    }
+  }
 }
 
 window.onload = function () {
   // This code will run when the document has finished loading.
-  populateProjects();
+  getProjList().then(() => {
+    // Create shallow copy of the project list that can be modified without affecting the original
+    makeListCopy();
+    // Populate the projects div with an initial 5 random projects
+    populateProjects(5, undefined);
+  });
 };
 
 // Force the nav menu to collapse when an link is selected
-var navbarCollapse = document.querySelector(".navbar-collapse");
+const navbarCollapse = document.querySelector(".navbar-collapse");
 
-var navbarLinks = navbarCollapse.querySelectorAll("a");
+const navbarLinks = navbarCollapse.querySelectorAll("a");
 
 navbarLinks.forEach(function (link) {
   link.addEventListener("click", function () {

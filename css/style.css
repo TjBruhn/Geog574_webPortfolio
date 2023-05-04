@@ -3,6 +3,7 @@ _____________________________________*/
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -22,19 +23,25 @@ body {
 img {
   width: 300px;
 }
+
 a {
-  color: #ffe66d;
+  /* color: #ffe66d; */
+  color: none;
 }
+
 a:hover {
   text-decoration: none;
 }
+
 h1 {
   font-size: 50px;
   line-height: 1;
 }
+
 h2 {
   font-weight: 600;
 }
+
 h1,
 h2 {
   margin: 0;
@@ -43,9 +50,11 @@ h2 {
 h3 {
   margin-bottom: 0;
 }
+
 .item-details h3 + p {
   font-style: italic;
 }
+
 .item-details h3 ~ p {
   margin: 0;
 }
@@ -54,16 +63,45 @@ h3 {
   border-bottom: 1px dashed #343434;
   padding: 25px 0; /* top/bottom l/r */
 }
+
 .divider > section:last-of-type {
   border-bottom: none;
 }
 
-.btn {
-  color: #f7fff7;
-  background: #2f3061;
+.techIcon {
+  height: 2rem;
+  width: 2rem;
 }
 
-/* eliminates the focus border that does behaves oddly */
+/* Custom button styles */
+.btn-primary {
+  background-color: #2f3061;
+  border-color: #2f3061;
+}
+
+.btn-primary:hover {
+  background-color: #f7fff7;
+  border-color: #2f3061;
+  color: #2f3061;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  background-color: #f7fff7;
+  border-color: #2f3061;
+  color: #2f3061;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #f7fff7;
+  border-color: #2f3061;
+  color: #2f3061;
+}
+
+/* eliminates the focus border */
 .navbar-toggler:focus {
   box-shadow: none;
 }
@@ -82,13 +120,16 @@ header {
   background: #2f3061;
   color: #f7fff7;
 }
+
 header h1,
 header h2 {
   text-align: center;
 }
+
 header h2 {
   margin-bottom: 16px;
 }
+
 /*Projects 
 _____________________________________*/
 .projects {
@@ -152,4 +193,8 @@ footer {
   background: #343434;
   color: #f7fff7;
   text-align: center;
+}
+
+#Contact h2 {
+  padding-bottom: 1rem;
 }
