@@ -183,7 +183,11 @@ _____________________________________*/
 
 .tech-container-top {
   border-top: 1px solid #343434;
-  padding-top: 1rem;
+  padding-block: 1rem;
+}
+
+.tech-container span {
+  padding-inline: 1rem;
 }
 
 .techIcon {
@@ -212,7 +216,7 @@ _____________________________________*/
 .otherTech {
   max-height: 50px;
   width: auto;
-  margin: 0.3rem;
+  margin: 0.4rem;
 }
 
 /*Work exp
