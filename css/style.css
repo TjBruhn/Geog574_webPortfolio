@@ -68,11 +68,6 @@ h3 {
   border-bottom: none;
 }
 
-.techIcon {
-  height: 2rem;
-  width: 2rem;
-}
-
 /* Custom button styles */
 .btn-primary {
   background-color: #2f3061;
@@ -108,6 +103,7 @@ h3 {
 
 #About,
 #Projects,
+#Technology,
 #Work,
 #Education,
 #Contact {
@@ -170,6 +166,55 @@ _____________________________________*/
   );
 }
 
+/*Technology
+_____________________________________*/
+.technology {
+  background: #babfba;
+}
+
+.tech-container {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tech-container-top {
+  border-top: 1px solid #343434;
+  padding-top: 1rem;
+}
+
+.techIcon {
+  height: 4rem;
+  width: 4rem;
+  margin: 0.25rem;
+}
+
+.gisTechItem {
+  padding: 0.75rem;
+  margin: 0.1rem;
+  color: white;
+  border: 0.1rem outset #ced8df;
+  border-radius: 1.5rem;
+}
+
+.arcCore {
+  background-color: #065c92;
+}
+.arcProd {
+  background-color: #0294a8;
+}
+.arcTech {
+  background-color: #6078a8;
+}
+.otherTech {
+  max-height: 50px;
+  width: auto;
+  margin: 0.3rem;
+}
+
 /*Work exp
 _____________________________________*/
 .work-exp {
@@ -197,4 +242,9 @@ footer {
 
 #Contact h2 {
   padding-bottom: 1rem;
+}
+
+.contactIcon {
+  height: 2rem;
+  width: 2rem;
 }
