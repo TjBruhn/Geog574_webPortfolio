@@ -172,16 +172,7 @@ _____________________________________*/
   background: #babfba;
 }
 
-.tech-container {
-  text-align: center;
-  display: flex;
-  width: 90%;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.tech-container-top {
+.techBlock {
   display: flex;
   border-top: 1px solid #343434;
   padding-block: 1rem;
@@ -190,7 +181,16 @@ _____________________________________*/
   flex-wrap: wrap;
 }
 
-.techIcon {
+.techBlock__container {
+  text-align: center;
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.techBlock__icon {
   height: 4rem;
   width: 4rem;
   padding: 0.25rem;
@@ -199,15 +199,15 @@ _____________________________________*/
   border-radius: 0.25rem;
 }
 
-.black {
+.techBlock__icon--black {
   background-color: #343434;
 }
 
-.white {
+.techBlock__icon--white {
   background-color: white;
 }
 
-.gisTechItem {
+.techBlock__gisItem {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,12 +218,12 @@ _____________________________________*/
   border-radius: 0.25rem;
 }
 
-.gisTechItem img {
+.gisItem__img {
   max-height: 35px;
   width: auto;
 }
 
-.gisTechItem h6 {
+.gisItem__label {
   margin: 0;
   flex-grow: 1;
 }
