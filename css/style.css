@@ -175,48 +175,57 @@ _____________________________________*/
 .tech-container {
   text-align: center;
   display: flex;
-  width: 100%;
-  justify-content: center;
+  width: 90%;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .tech-container-top {
+  display: flex;
   border-top: 1px solid #343434;
   padding-block: 1rem;
-}
-
-.tech-container span {
-  padding-inline: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .techIcon {
   height: 4rem;
   width: 4rem;
-  margin: 0.25rem;
+  padding: 0.25rem;
+  margin: 0.35rem;
+  border: 1.5px solid #343434;
+  border-radius: 0.25rem;
+}
+
+.black {
+  background-color: #343434;
+}
+
+.white {
+  background-color: white;
 }
 
 .gisTechItem {
-  padding: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
   margin: 0.1rem;
-  color: white;
-  border: 0.1rem outset #ced8df;
-  border-radius: 1.5rem;
+  padding: 0.25rem;
+  border: 1.5px solid #343434;
+  border-radius: 0.25rem;
 }
 
-.arcCore {
-  background-color: #065c92;
-}
-.arcProd {
-  background-color: #0294a8;
-}
-.arcTech {
-  background-color: #6078a8;
-}
-.otherTech {
-  max-height: 50px;
+.gisTechItem img {
+  max-height: 35px;
   width: auto;
-  margin: 0.4rem;
+}
+
+.gisTechItem h6 {
+  margin: 0;
+  flex-grow: 1;
 }
 
 /*Work exp
